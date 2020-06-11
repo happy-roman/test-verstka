@@ -1,0 +1,75 @@
+.testimonials
+  padding-bottom: 10%
+  &__title
+    text-align: center
+    &_h3
+      font-size: 36px
+      line-height: 30px
+      font-weight: 500
+      color: #222222
+      padding-top: 10%
+      padding-bottom: 5%
+    &_p
+      font-family: 'Roboto', sans-serif
+      font-size: 14px
+      line-height: 24px
+      font-weight: 300
+      color: #777777
+      padding-bottom: 10%
+  &__slider
+    &_items
+      display: flex !important
+      flex-direction: column
+      justify-content: space-between
+      background-color: #f7fafc
+      padding: 10%
+      height: 200px !important
+      &__text_p
+        padding: 3%
+        font-family: 'Roboto', sans-serif
+        font-size: 14px
+        line-height: 24px
+        font-weight: 300
+        color: #777777
+      &_photo
+        border-radius: 50%
+        padding-right: 5%
+      &_person
+        display: flex
+        justify-content: left
+        align-items: center
+
+      &_name
+        font-size: 18px
+        line-height: 24px
+        font-weight: 500
+        color: #222222
+      &_job
+        font-family: 'Roboto', sans-serif
+        font-size: 14px
+        line-height: 24px
+        font-weight: 300
+        color: #777777
+
+.slider__nav_slick_left
+  position: absolute
+  top: 40%
+  left: -10%
+.slider__nav_slick_right
+  position: absolute
+  top: 40%
+  right: -10%
+.slick-slide
+  margin: 10px !important
+  &:hover
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1)
+    background-color: #ffffff
+  &:hover .testimonials__slider_items
+    background-color: #ffffff
+
+
+
+
+
+
+
