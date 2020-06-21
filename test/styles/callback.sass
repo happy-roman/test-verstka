@@ -1,0 +1,102 @@
+.callback-block, .callback-block__sanded
+  display: none
+  position: fixed
+  top: 100px
+  left: 35%
+  z-index: 3
+
+.callback
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 454px
+  padding: 32px 42px 32px 42px
+  border-radius: 16px
+  background: #FFFFFF
+  &__h4
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 50px
+    display: flex
+    align-items: center
+  &__p
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    display: flex
+    align-items: center
+  &__form
+    margin-top: 18px
+  &__input
+    background: #FFFFFF
+    border: 1px solid rgba(0, 0, 0, 0.2)
+    border-radius: 16px
+    width: 420px
+    font-size: 16px
+    line-height: 114%
+    color: rgba(43, 45, 58, 0.5)
+    padding: 15px
+    margin:  12px 0
+    &-button
+      width: 454px
+      background: #397DFF
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
+      color: #FFFFFF
+      border: none
+      margin-bottom: 0
+  &__checkbox
+    margin: 16px 0
+  &__close
+    position: absolute
+    top: 16px
+    right: 24px
+    width: 24px
+.callback__button-sanded
+  width: 454px
+  background: #397DFF
+  font-weight: 600
+  font-size: 18px
+  line-height: 22px
+  color: #FFFFFF
+  border: none
+  margin-bottom: 0
+
+.form-sanded
+  display: flex
+  align-items: center
+  &>svg
+    padding-bottom: 24px
+    padding-top: 10px
+  &__p
+    padding-bottom: 31px
+
+
+@media (max-width: 500px)
+  .callback-block, .callback-block__sanded
+    left: 4%!important
+  .callback
+    padding: 38px  16px 32px 16px
+    width: 311px
+    & label
+      font-size: 10px
+  .callback__h4
+    font-size: 21px
+  .callback__p
+    font-size: 12px
+  .callback__input
+    margin: 9px 0
+    width: 280px
+    font-size: 14px
+    &-button
+      width: 311px
+  .callback__p
+    font-size: 14px
+  .form-sanded__p
+    padding-bottom: 15px
+  .callback__button-sanded
+    width: 311px
+
+

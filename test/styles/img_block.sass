@@ -1,0 +1,127 @@
+.img
+  height: 786px
+  background: #EBEEF5
+  &__block
+    height: 620px
+    display: flex
+    padding-top: 165px
+    &_sound
+      position: absolute
+      background: rgba(57, 125, 255, 0.15)
+      mix-blend-mode: screen
+      border: 1px solid #397DFF
+      box-sizing: border-box
+      border-radius: 50%
+      height: 73px
+      width: 73px
+      z-index: 2
+      &:hover .img__block_sound-mini
+        content: url(../img/sound.png)
+        font-size: 9px
+        background: #397DFF
+      &:focus .pop_up_sound
+        display: flex
+
+      &-mini
+        position: absolute
+        width: 23px
+        height: 23px
+        mix-blend-mode: screen
+        border: 1px solid #397DFF
+        box-sizing: border-box
+        border-radius: 50%
+        z-index: 3
+        top: 25px
+        left: 25px
+      &-img
+        position: absolute
+        z-index: 1
+    &_sound-right
+      top: 60px
+      right: 200px
+    &_sound-left
+      top: 60px
+      left: 200px
+
+  &__block-left
+    background-image: url(../img/img_block-img1.jpg)
+    width: 50%
+
+  &__block-right
+    background-image: url(../img/img_block-img2.jpg)
+    height: inherit
+    width: 50%
+    position: relative
+
+.pop_up_sound
+  position: absolute
+  width: 300px
+  background: #ffffff
+  border-radius: 10px
+  padding: 15px
+  top: -105px
+  left: 70px
+  z-index: 4
+  &::after, ::before
+    content: ''
+    position: absolute
+    left: 157px
+    bottom: -20px
+    border: 10px solid transparent
+
+  &::after
+    border-top: 10px solid white
+
+  &__img
+    display: flex
+    align-items: start
+  &__text
+    color: #2B2D3A
+    &_h4
+      font-style: normal
+      font-weight: 500
+      font-size: 20px
+      line-height: 132%
+
+  &__list
+    font-size: 12px
+    line-height: 142%
+    list-style: none
+    display: flex
+    padding: 5px 0
+
+
+@media (max-width: 500px)
+  .img__block-left
+    background-image: url(../img/img_block-img1-mini.jpg)!important
+    background-repeat: no-repeat
+  .img__block-right
+    background-image: url(../img/img_block-img2-mini.jpg)!important
+    background-repeat: no-repeat
+  .img__block_sound
+    width: 40px!important
+    height: 40px!important
+    &-mini
+      width: 20px!important
+      height: 20px!important
+      top: 9px!important
+      left: 10px!important
+    &-img
+      width: 20px!important
+    &-right
+      top: 30px!important
+      right: 135px!important
+    &-left
+      top: 30px!important
+      left: 135px!important
+  .img-sound__mobile-r
+    top: 6.5%!important
+    left: 12%!important
+  .img-sound__mobile-l
+    top: 6.5%!important
+    left: 79%!important
+  .pop_up_sound
+    top: -165px!important
+    left: -165px!important
+    &::after, .pop_up_sound ::before
+      left: 188px!important

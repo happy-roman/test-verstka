@@ -1,0 +1,131 @@
+.visuallyHidden
+  position: absolute
+  overflow: hidden
+  clip: rect(0 0 0 0)
+  height: 1px
+  width: 1px
+  margin: -1px
+  padding: 0
+  border: 0
+
+.hamburger
+  width: 20px
+  height: 20px
+  position: relative
+
+.hamburger .bar
+  padding: 0
+  width: 20px
+  height: 2px
+  background-color: #2B2D3A
+  display: block
+  border-radius: 4px
+  transition: all 0.4s ease-in-out
+  position: absolute
+
+.bar1
+  top: 0
+
+.bar2,
+.bar3
+  top: 7.5px
+
+.bar3
+  right: 0
+
+.bar4
+  bottom: 2px
+
+.checkbox2:checked + label > .hamburger2 > .bar1
+  transform: translateX(40px)
+  background-color: transparent
+
+.checkbox2:checked + label > .hamburger2 > .bar2
+  transform: rotate(45deg)
+
+.checkbox2:checked + label > .hamburger2 > .bar3
+  transform: rotate(-45deg)
+
+.checkbox2:checked + label > .hamburger2 > .bar4
+  transform: translateX(-40px)
+  background-color: transparent
+
+.mobile-header
+  display: none
+  position: relative
+  background: #EBEEF5
+  padding: 52px 16px 16px 16px
+  width: 343px
+  &__logo
+    display: flex
+    justify-content: space-between
+    align-items: center
+.mobile-nav
+  position: absolute
+  margin-top: 16px
+  left: 0
+  width: 343px
+  padding: 16px
+  background: #EBEEF5
+  transition: 0.5s
+  &__list
+    list-style: none
+    border-bottom: 2px solid rgba(43, 45, 58, 0.1)
+    padding: 24px 0
+    color: #2B2D3A
+  &__link
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.01em
+    color: #2B2D3A
+    display: flex
+    align-items: center
+    &:active
+      color: #397DFF
+      .link-img-home
+        content: url(../img/home-color.png)
+      .link-img__projects
+        content: url(../img/projects-color.png)
+      .link-img__lamp
+        content: url(../img/lamp-color.png)
+      .link-img__about
+        content: url(../img/about-company-color.png)
+      .link-img__resheniya
+        content: url(../img/gotovie-resheniya-color.png)
+      .link-img__contacts
+        content: url(../img/contacts-color.png)
+
+    &-img
+      width: 24px
+      margin-right: 24px
+  &__button
+    background: #397DFF
+    box-shadow: 0 5.12px 20.48px rgba(85, 104, 255, 0.12)
+    border-radius: 6px
+    border: none
+    width: 100%
+    margin: 32px 0
+    font-weight: 500
+    font-size: 16px
+    line-height: 42px
+    color: #FFFFFF
+  &__mail
+    font-weight: 500
+    font-size: 22px
+    line-height: 27px
+    color: #2B2D3A
+    padding-bottom: 90px
+    &_link
+      display: flex
+      align-items: center
+      padding-top: 20px
+      color: #397DFF
+      font-size: 18px
+      &>img
+        margin-right: 24px
+        width: 24px
+
+.show-menu
+  display: block

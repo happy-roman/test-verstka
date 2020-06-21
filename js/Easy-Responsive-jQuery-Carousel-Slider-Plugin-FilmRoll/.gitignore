@@ -1,8 +1,0 @@
-*-ck.js
-.DS_Store
-*.noie.js
-*.noie.coffee
-*.codekit
-tmp
-/node_modules
-/.project
